@@ -1,0 +1,18 @@
+@import 'variables.scss';
+
+:root {
+    font-family: $main-font;
+    font-size: $main-font-size;
+    
+    background-color: salmon;
+}
+.page-container {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
