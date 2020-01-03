@@ -1,0 +1,26 @@
+.language-change {
+    display: flex;
+    flex-direction: row;
+}
+
+.language-change__button {
+    position: relative;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    padding: 0px;
+    padding-right: 1.7rem;
+    margin-left: 1rem;
+}
+
+.language-change__button::after {
+    content: '▾';
+    display: block;
+    position: absolute;
+    top: 0.1rem;
+    right: 0;
+    font-size: 1.4rem;
+}

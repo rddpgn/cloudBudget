@@ -6,9 +6,8 @@ let browserSync =   require('browser-sync');
 let concat =        require('gulp-concat');
 
 gulp.task('sass', gulp.series(function() {
-    return gulp.src('./src/scss/**/*.scss')
+    return gulp.src('./src/scss/style.scss')
         .pipe(sass())
-        .pipe(concat('styles.css'))
         .pipe(gulp.dest('./src/css'))
         .pipe(browserSync.stream())
 }))
@@ -18,7 +17,7 @@ gulp.task('serve', gulp.series('sass', function() {
         server: "./src"
     });
 
-    gulp.watch('./src/scss/*.scss', gulp.series('sass'));
+    gulp.watch('./src/scss/**/*.scss', gulp.series('sass'));
     gulp.watch('./src/*.html').on('change', browserSync.reload);
   })
 );

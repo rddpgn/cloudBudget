@@ -1,0 +1,14 @@
+.main-navigation__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    li + li {
+        margin-left: 2rem;
+    }
+
+    a {
+        text-transform: uppercase;
+        color: white;
+    }
+}

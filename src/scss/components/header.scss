@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 11%;
+    margin: 4.2rem 0;
+
+    * {
+        flex-grow: 0;    
+    }
+
+    * + * {
+        margin-left: 2rem;
+    }
+}
+
+.header > :nth-child(2) {
+    flex-grow: 1;
+}

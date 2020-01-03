@@ -1,5 +1,22 @@
+@import '../variables.scss';
+
+.main-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    * + * {
+        margin-left: 0.64rem;
+    }
+}
+
 .main-logo__company-name {
     font-size: 1.28rem;
     font-weight: bold;
     text-transform: uppercase;
+    color: white;
+}
+
+.main-logo__icon {
+    width: 1.78rem;
 }
