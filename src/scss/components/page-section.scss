@@ -8,6 +8,10 @@
     justify-content: center;
 }
 
+.page-section_narrow {
+    padding: 4.71rem;
+}
+
 .page-section_dark-bc {
     background-color: #FAFAFA;
 }
@@ -16,4 +20,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.page-section__content-wrapper > * + * {
+    margin-top: 4.71rem;
 }

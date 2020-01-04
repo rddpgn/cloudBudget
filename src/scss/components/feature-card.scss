@@ -1,0 +1,29 @@
+.feature-card {
+    position: relative;
+    padding-bottom: 10rem;
+}
+
+.feature-card__text-card {
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    background-color: white;
+    margin: 2rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+    padding: 2.28rem;
+    text-align: center;
+    border-radius: 0.57rem;
+
+    * + * {
+        margin-top: 1.5rem;
+    }
+}
+
+.feature-card__bc-img {
+    width: 25rem;
+}
+
+.feature-card + .feature-card {
+    margin-left: 2rem;
+}
