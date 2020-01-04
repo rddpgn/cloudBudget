@@ -1,0 +1,19 @@
+.page-section {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6.71rem 11.78rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-section_dark-bc {
+    background-color: #FAFAFA;
+}
+
+.page-section__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

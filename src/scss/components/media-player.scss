@@ -1,0 +1,23 @@
+.media-player {
+    position: relative;
+    width: 32rem;
+    height: 22rem;
+    background-image: url('../../images/media-bc.png');
+    background-size: cover;
+    flex-shrink: 0;
+    margin: 0 6.9rem;
+    border-radius: 1rem;
+}
+
+.media-player__control-button {
+    position: absolute;
+    width: 4.71rem;
+    height: 4.71rem;
+    border-radius: 50%;
+    background-image: url('../../icons/media-button.svg');
+    background-size: cover;
+    border: none;
+    left: -2.35rem;
+    top: 50%;
+    margin-top: -2.35rem;
+}

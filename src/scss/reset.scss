@@ -43,7 +43,9 @@ ol[class] {
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  text-decoration: none;
+  color: #ED4C5C;
+  display: inline-block;
 }
 
 a {
@@ -71,4 +73,12 @@ select {
 button {
   cursor: pointer;
   outline: none;
+}
+
+a {
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5 {
+  padding: 0;
 }

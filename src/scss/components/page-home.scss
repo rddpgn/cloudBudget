@@ -3,10 +3,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 55rem;
+}
+
+.page-home::before {
+    display: block;
+    width: 100%;
+    height: 55rem;
     z-index: -1;
+    content: " ";
     background-image: url('../../images/page-home-bc.jpg');
     background-size: cover;
-    height: 55rem;
+    position: absolute;
 }
 
 .page-home__headline-container {

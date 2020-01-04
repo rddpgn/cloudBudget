@@ -42,7 +42,9 @@ ol[class] {
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
-  text-decoration-skip-ink: auto; }
+  text-decoration: none;
+  color: #ED4C5C;
+  display: inline-block; }
 
 a {
   text-decoration: none; }
@@ -66,6 +68,12 @@ button {
   cursor: pointer;
   outline: none; }
 
+a {
+  cursor: pointer; }
+
+h1, h2, h3, h4, h5 {
+  padding: 0; }
+
 :root {
   font-family: "Lato", sans-serif;
   font-size: 0.97vw; }
@@ -79,6 +87,11 @@ h1 {
   text-transform: uppercase;
   line-height: 5.14rem; }
 
+h2 {
+  font-size: 2.57rem;
+  line-height: 3rem;
+  padding: 1rem 0; }
+
 .header {
   position: absolute;
   display: flex;
@@ -88,7 +101,8 @@ h1 {
   align-items: center;
   justify-content: flex-start;
   padding: 0 11%;
-  margin: 4.2rem 0; }
+  margin: 4.2rem 0;
+  z-index: 10; }
   .header * {
     flex-grow: 0; }
   .header * + * {
@@ -164,10 +178,17 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 55rem; }
+
+.page-home::before {
+  display: block;
+  width: 100%;
+  height: 55rem;
   z-index: -1;
+  content: " ";
   background-image: url("../../images/page-home-bc.jpg");
   background-size: cover;
-  height: 55rem; }
+  position: absolute; }
 
 .page-home__headline-container {
   display: block;
@@ -186,3 +207,49 @@ h1 {
   font-size: 1rem;
   padding: 1.2rem 3.71rem;
   border-radius: 0.42rem; }
+
+.page-section {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6.71rem 11.78rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.page-section_dark-bc {
+  background-color: #FAFAFA; }
+
+.page-section__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.row-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.text-wrapper * + * {
+  margin-top: 1.5rem; }
+
+.media-player {
+  position: relative;
+  width: 32rem;
+  height: 22rem;
+  background-image: url("../../images/media-bc.png");
+  background-size: cover;
+  flex-shrink: 0;
+  margin: 0 6.9rem;
+  border-radius: 1rem; }
+
+.media-player__control-button {
+  position: absolute;
+  width: 4.71rem;
+  height: 4.71rem;
+  border-radius: 50%;
+  background-image: url("../../icons/media-button.svg");
+  background-size: cover;
+  border: none;
+  left: -2.35rem;
+  top: 50%;
+  margin-top: -2.35rem; }
