@@ -2,11 +2,15 @@
 
 :root {
     font-family: $main-font;
-    font-size: $main-font-size;
-    
-    background-color: salmon;
+    font-size: 0.97vw;
 }
 .page-container {
     width: 100%;
 }
 
+h1 {
+    font-size: 5.14rem;
+    color: white;
+    text-transform: uppercase;
+    line-height: 5.14rem;
+}

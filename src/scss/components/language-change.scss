@@ -16,6 +16,10 @@
     margin-left: 1rem;
 }
 
+.language-change__icon {
+    width: 2rem;
+}
+
 .language-change__button::after {
     content: '▾';
     display: block;

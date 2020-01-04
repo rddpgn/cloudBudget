@@ -62,15 +62,25 @@ textarea,
 select {
   font: inherit; }
 
+button {
+  cursor: pointer;
+  outline: none; }
+
 :root {
   font-family: "Lato", sans-serif;
-  font-size: 14px;
-  background-color: salmon; }
+  font-size: 0.97vw; }
 
 .page-container {
   width: 100%; }
 
+h1 {
+  font-size: 5.14rem;
+  color: white;
+  text-transform: uppercase;
+  line-height: 5.14rem; }
+
 .header {
+  position: absolute;
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
@@ -129,6 +139,9 @@ select {
   padding-right: 1.7rem;
   margin-left: 1rem; }
 
+.language-change__icon {
+  width: 2rem; }
+
 .language-change__button::after {
   content: '▾';
   display: block;
@@ -137,7 +150,7 @@ select {
   right: 0;
   font-size: 1.4rem; }
 
-.login-button {
+.button-login {
   color: white;
   background: none;
   text-transform: uppercase;
@@ -145,3 +158,31 @@ select {
   border-radius: 0.43rem;
   padding: 0.78rem 2rem;
   outline: none; }
+
+.page-home {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  background-image: url("../../images/page-home-bc.jpg");
+  background-size: cover;
+  height: 55rem; }
+
+.page-home__headline-container {
+  display: block;
+  font-size: 1.71rem;
+  color: white;
+  text-align: center;
+  margin-top: 5rem; }
+  .page-home__headline-container * + * {
+    margin-top: 2.71rem; }
+
+.button-sign-up {
+  text-transform: uppercase;
+  color: #ED4C5C;
+  background-color: white;
+  border: none;
+  font-size: 1rem;
+  padding: 1.2rem 3.71rem;
+  border-radius: 0.42rem; }
