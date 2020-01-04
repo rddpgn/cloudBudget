@@ -1,0 +1,17 @@
+.col-line {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-line > * + * {
+    margin-top: 1.5rem;
+}
+
+.col-line_small-gap > * + * {
+    margin-top: 0.7rem;
+}
+
+.col-line_centered {
+    align-items: center;
+    text-align: center;    
+}

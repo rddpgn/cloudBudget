@@ -24,3 +24,12 @@ h2 {
 .font-size-small {
     font-size: 0.85rem;
 }
+
+.icon-small {
+    width: 2.28rem;
+    height: 2.28rem;
+}
+
+.icon-small + .icon-small {
+    margin-left: 2rem;
+}
