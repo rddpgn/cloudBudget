@@ -14,7 +14,11 @@
 }
 
 .row-line_gap > * + * {
-    margin-left: 3.2rem;
+    margin-left: 3rem;
+}
+
+.row-line_gap-big > * + * {
+    margin-left: 6rem;
 }
 
 .row-line_gap-small > * + * {

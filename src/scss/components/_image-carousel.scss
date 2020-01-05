@@ -1,5 +1,39 @@
+.image-carousel {
+    position: relative;
+    padding: 0 8rem;
+    z-index: 1;
+}
+
 .image-carousel__img {
     object-fit: cover;
     width: 31.8rem;
-    padding: 0 8rem;
+    border-radius: 1rem;
+}
+
+.image-carousel__img-bc-left {
+    object-fit: cover;
+    height: 84%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    margin-left: 3rem;
+    margin-top: 4%;
+    opacity: 0.5;
+    background: #C4C4C4;
+    top: 0;
+    border-radius: 1rem;
+}
+
+.image-carousel__img-bc-right {
+    object-fit: cover;
+    height: 84%;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    margin-top: 4%;
+    margin-right: 3rem;
+    opacity: 0.5;
+    background: #C4C4C4;
+    top: 0;
+    border-radius: 1rem;
 }

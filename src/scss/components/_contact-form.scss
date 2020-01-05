@@ -8,6 +8,7 @@
     font-size: 1.14rem;
     color: rgba(19, 39, 67, 0.5);
     padding: 0 5rem;
+    min-width: 38.5rem;
 }
 
 .contact-form__input_disabled {
@@ -42,4 +43,9 @@
     padding: 1rem 1.5rem;
     border-radius: 0.42rem;
     cursor: pointer;
+    outline: none;
+}
+
+.contact-form__submit:hover {
+    background-color: $bc-red;
 }

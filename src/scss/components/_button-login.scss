@@ -8,3 +8,8 @@
     padding: 0.78rem 2rem;
     outline: none;
 }
+
+.button-login:hover {
+    color: $text-color-red;
+    background-color: white;    
+}
