@@ -13,20 +13,10 @@
 }
 
 .page-section_dark-bc {
-    background-color: #FAFAFA;
+    background-color: $bc-light;
 }
 
 .page-section_red-bc {
-    background-color: #ED4C5C;
-    color: white;
-}
- 
-.page-section__content-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.page-section__content-wrapper > * + * {
-    margin-top: 4.71rem;
+    background-color: $bc-red;
+    color: $text-color-light;
 }
