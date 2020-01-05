@@ -11,6 +11,10 @@
     padding-bottom: 2.85rem;
 }
 
+.technology-card + .technology-card {
+    margin-left: 2rem;
+}
+
 .technology-card__number {
     text-transform: uppercase;
     font-size: 7.14rem;

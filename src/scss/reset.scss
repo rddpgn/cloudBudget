@@ -9,6 +9,10 @@ ol[class] {
   padding: 0;
 }
 
+ul {
+  padding: 0;
+}
+
 /* Убираем внешние отступы */
 body,
 h1,
@@ -41,10 +45,14 @@ ol[class] {
   list-style: none;
 }
 
+ul {
+  list-style: none;
+}
+
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
   text-decoration: none;
-  color: #ED4C5C;
+  color: inherit;
   display: inline-block;
 }
 
@@ -55,6 +63,10 @@ a {
 /* Упрощаем работу с изображениями */
 img {
   display: block;
+}
+
+img:not([class]) {
+  max-width: 100%;
 }
 
 /* Указываем понятную периодичность в потоке данных у article*/
@@ -81,4 +93,11 @@ a {
 
 h1, h2, h3, h4, h5 {
   padding: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
 }

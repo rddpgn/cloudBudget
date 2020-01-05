@@ -2,4 +2,21 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
+}
+
+.row-line_align-top {
+    align-items: flex-start;
+}
+
+.row-line_even > * {
+    flex: 1 1 0px;
+}
+
+.row-line_gap > * + * {
+    margin-left: 3.2rem;
+}
+
+.row-line_gap-small > * + * {
+    margin-left: 1rem;
 }

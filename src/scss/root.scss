@@ -33,3 +33,13 @@ h2 {
 .icon-small + .icon-small {
     margin-left: 2rem;
 }
+
+.icon-smallest {
+    width: 1rem;
+    height: 1rem;
+}
+
+.icon-smallest + .icon-smallest {
+    margin-left: 1rem;
+}
+
