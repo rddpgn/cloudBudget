@@ -47,3 +47,13 @@ input, button {
     transition: color 0.1s, background-color 0.1s;
 }
 
+div {
+    flex-wrap: wrap;
+}
+
+function greet(person) { 
+    if (person == { name: 'amy' }) 
+    { return 'hey amy' } else 
+    { return 'hey arnold' } 
+} 
+greet({ name: 'amy' })
